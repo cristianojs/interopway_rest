@@ -166,7 +166,7 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 ### Installation    
 Clone/git pull the repo into any local directory
 ```
-$ git clone https://github.com/AndreiLN/Ikon.git  
+$ git clone https://github.com/cristianojs/interopway_rest.git 
 ```
 Open the terminal in this directory and run:
 ```
