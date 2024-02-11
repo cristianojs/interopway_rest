@@ -159,3 +159,29 @@ Method CallBusinesService(targetBusinessOperation As %String, request As cjs.int
 The **TestPostUser** method instantiates a message to make the post of type **cjs.interopway.rest.bo.PostRequest** and fills the body with a dynamic object containing the JSON to be sent to the REST Service, assigns the url of the service and invokes the **CallBusinessService** method which invokes the testing service and dispatches the message to Business Operation. Note that all other test methods follow the same principle, except for the **GET** and **DELETE** method which have no body.
 
 With Interopway REST, we only add the Business Operation to Production, configure or pass the access data via messages and we worry about implementing the business rules of the integrations and no longer with the code to make the connection with external services.
+
+## DOCKER Support
+### Prerequisites   
+Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.    
+### Installation    
+Clone/git pull the repo into any local directory
+```
+$ git clone https://github.com/AndreiLN/Ikon.git  
+```
+Open the terminal in this directory and run:
+```
+$ docker-compose build
+```
+Run IRIS container with your project:
+```
+$ docker-compose up -d
+```
+Test from docker console
+```
+$ docker-compose exec iris1 iris session iris
+USER>
+```
+or using **WebTerminal**
+```
+http://localhost:42773/terminal/
+```
